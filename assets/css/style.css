@@ -1,0 +1,163 @@
+html {
+    scroll-behavior: smooth; /* استایلی که حرکت در صفحه با هایپر لینک را نرم انجام می دهد*/ 
+}
+
+::placeholder{
+    font-size: 20px;  /*  با این سلکتور تمام پلیس هولدررهای صفحه با فونت سایز 20پیکسل نمایش داده میشود */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    background: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+section {
+    padding: 50px;
+    margin: 20px;
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* -----------------table----------------- */
+
+table {
+    width: 100%;
+    border-collapse: separate; /* برای حذف فاصله بین خطوط */
+    border-spacing: 5px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 3px solid black;  }
+
+
+  th, td { 
+    /* border: 1px solid black; */
+    padding: 8px; /* افزودن فاصله داخلی برای سلول‌ها */
+    text-align: center;
+    background-color: var(--primary-color);
+    box-shadow: inset 0 0 16px black;
+  }
+
+  td{
+    transition: all 200ms linear;
+  }
+
+  thead {
+    background-color: #363636; /* رنگ پس زمینه برای سرستون */
+    color: #86ff40;
+  }
+
+  tr:nth-child(even) {
+    background-color: #86ff40; /* رنگ متفاوت برای ردیف‌های زوج */
+  }
+  td:active {
+    background-color: #ff4040; /* رنگ متفاوت برای ردیف‌های زوج */
+  }
+  button:focus {
+    background-color: #ff4040; /* رنگ متفاوت برای ردیف‌های زوج */
+  }
+
+  @media (max-width: 600px) {
+    table, thead, tbody, th, td, tr {
+      display: block; /* نمایش به صورت بلوک */
+    }
+
+    tr {
+      margin-bottom: 15px; /* فاصله بین ردیف‌ها */
+    }
+
+    tbody {
+        position: sticky;
+        top: 0;
+    }
+
+
+    /* td::before {
+      content: attr(data-label); /* افزودن عنوان ستون به صورت قبل از محتوای سلول 
+      position: absolute;
+      left: 0;
+      width: 50%;
+      padding-left: 10px;
+      font-weight: bold;
+      text-align: left;
+    } */
+  }
+
+  /*----------- استایل های پالت رنگ--------------- */
+  :root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --accent-color: #e74c3c;
+    --bg-color: #ecf0f1;
+    --text-color: #2c3e50;
+}
+
+.blackWhite{
+    --primary-color: white;
+    --secondary-color: white;
+    --accent-color: white;
+    --bg-color: black;
+    --text-color: black;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+h1 {
+    color: var(--primary-color);
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--accent-color);
+}
+
+button {
+    background-color: var(--secondary-color);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: var(--accent-color);
+}
+
+
+
+
